@@ -34,13 +34,7 @@ class RSP:
                 print('이기셨습니다!!😀')
                 self._score += 1
 
-            elif choice == '가위' and rounds == '가위':
-                print('아쉽지만 비겼습니다.점수는 없어영😥')
-
-            elif choice == '바위' and rounds == '바위':
-                print('아쉽지만 비겼습니다.점수는 없어영😥')
-
-            elif choice == '보' and rounds == '보':
+            elif choice == rounds:
                 print('아쉽지만 비겼습니다.점수는 없어영😥')
 
             else:
