@@ -10,6 +10,7 @@ class RSP:
         print('가위바위보 ai를 이겨라🤖!!')
         print('※ 게임 중 "#"을 누르면 종류합니다')
 
+        
         for i in range(self._round):
             print('Round {}'.format(i+1))
             choice = input('가위,바위,보 중 하나를 쓰시오 :').strip()
