@@ -23,13 +23,13 @@ class rsp_rule(RSP):
         for i in range(self._round):
             print('Round {}'.format(i+1))
             choice = input('가위,바위,보 중 하나를 쓰시오 :').strip()
-            
-            ai_choice = random.choice(list(self.rsp))
-            print(f'ai의 선택 : {ai_choice}'.format(ai_choice))
 
             if choice == '#':
                 print('가위바위보 게임을 종료합니다')
                 break
+
+            ai_choice = random.choice(list(self.rsp))
+            print(f'ai의 선택 : {ai_choice}'.format(ai_choice))
 
             if choice == self._rule[ai_choice]:
                 print('이기셨습니다!!😀')
