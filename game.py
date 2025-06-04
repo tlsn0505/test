@@ -17,13 +17,14 @@ class rsp_rule(RSP):
         }
 
     def play(self):
-        print('가위바위보 ai를 이겨라🤖!!')
+        name = input('이름을 입력하세요 : ').strip()
+        print(f'{name} vs ai 가위바위보 대결🤖!!')
         print('총 5 Round가 진행됩니다.')
         print('※ 게임 중 "#"을 누르면 종료합니다\n')
 
         for i in range(self._round):
             print('Round {}'.format(i+1))
-            choice = input('가위,바위,보 중 하나를 쓰시오 :').strip()
+            choice = input(f'{name}님 가위,바위,보 중 하나를 선택해주세요 :').strip()
 
             if choice == '#':
                 print('가위바위보 게임을 종료합니다')
